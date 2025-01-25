@@ -12,7 +12,7 @@ import Loader from './Loader';
 import { Textarea } from './ui/textarea';
 import ReactDatePicker from 'react-datepicker';
 import { useToast } from '@/hooks/use-toast';
-//import { Input } from './ui/input';
+import { Input } from './ui/input';
 
 const initialValues = {
     dateTime: new Date(),
@@ -74,7 +74,8 @@ const MeetingTypeList = () => {
         <HomeCard
             img="/icons/add-meeting.svg"
             title="New Meeting"
-            description="Start an instant meeting"
+                description="Start an instant meeting"
+                className="bg-orange-1"
             handleClick={() => setMeetingState('isInstantMeeting')}
         />
         <HomeCard
