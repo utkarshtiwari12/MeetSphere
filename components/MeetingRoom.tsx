@@ -22,6 +22,7 @@ import {
 import Loader from './Loader';
 import EndCallButton from './EndCallButton';
 import { cn } from '@/lib/utils';
+import { FloatingIcon } from './board-icon';
 
 type CallLayoutType = 'grid' | 'speaker-left' | 'speaker-right';
 
@@ -51,9 +52,10 @@ const MeetingRoom = () => {
 
     return (
         <section className="relative h-screen w-full overflow-hidden pt-4 text-white">
+            <FloatingIcon href="https://meetboard.vercel.app" src="/logo.svg" alt="MeetBoard" />
         <div className="relative flex size-full items-center justify-center">
             <div className=" flex size-full max-w-[1000px] items-center">
-            <CallLayout />
+                <CallLayout />
             </div>
             <div
             className={cn('h-[calc(100vh-86px)] hidden ml-2', {
